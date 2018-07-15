@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cfa.chyrellos.chatfa.ChatRoomActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:padding="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_chat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whatsapp_color"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:id="@+id/toolbar_image"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="@dimen/margin_avg"
+                android:src="@color/amber_50">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <RelativeLayout
+                android:layout_toEndOf="@+id/toolbar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/toolbar_userName_view"
+                    android:textSize="15dp"
+                    android:text="Name"
+                    android:paddingTop="10dp"
+                    android:gravity="top"
+                    android:layout_marginLeft="10dp"
+
+                    android:textStyle="normal"
+                    android:textColor="#FFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/toolbar_statusDate_view"
+                    android:textSize="12dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text="çevrim içi"
+                    android:textColor="#FFF"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_chatroom" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ChatFA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings2">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hint_email">example@email.com</string>
+    <string name="hint_password">******</string>
+    <string name="hint_name">Fullname</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="registerbtn">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+</resources>

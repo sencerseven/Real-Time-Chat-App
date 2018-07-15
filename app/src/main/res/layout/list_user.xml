@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:id="@+id/user_list_Relative">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_view_user_alphabet">
+       <!-- <TextView
+            android:id="@+id/text_view_user_alphabet_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="@dimen/margin_avg"
+            android:background="@drawable/circle_accent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:text="A"
+            tools:text="A" /> -->
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:scaleType="centerCrop"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:id="@+id/user_list_image"
+    android:layout_alignParentEnd="false"
+    android:layout_marginStart="@dimen/margin_avg">
+
+
+</de.hdodenhof.circleimageview.CircleImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toEndOf="@+id/relative_view_user_alphabet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textlines"
+        >
+    <TextView
+        android:id="@+id/userName_txt"
+        android:textSize="15dp"
+        android:text="Name"
+        android:paddingTop="18dp"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+
+        android:textStyle="normal|bold"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/user_statusDate"
+            android:textSize="12dp"
+            android:paddingBottom="15dp"
+            android:gravity="bottom"
+            android:layout_marginLeft="10dp"
+
+            android:textStyle="normal|bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/user_login_status"
+            android:width="@dimen/status_width"
+            android:height="@dimen/status_height"
+
+
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="normal|bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
